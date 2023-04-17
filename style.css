@@ -7,7 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(15, 94, 81), rgb(19, 27, 36));
 }
 
 button {
@@ -15,18 +15,43 @@ button {
 }
 
 #main-content {
+  width: 60%;
   position: relative;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.45);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  
+}
+#create-task-form {
+  width: 60%;
 }
 
+#create-task-form input[type=submit] {
+  background-color: white;
+  border: 2px #333536;
+  border-style: solid;
+  border-radius: 2px;
+}
+
+#create-task-form input[type=submit]:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(40, 85, 116);
+  border-color: white;
+  transition: 0.3s;
+}
+#create-task-form input[type=text] {
+  width: 100%;
+}
+#create-task-form label {
+  color: white;
+}
 #list {
   margin: 10px;
   border: 1px solid #333;
@@ -34,4 +59,11 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  text-align: center;
+}
+
+#list button {
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: 8px;
 }
